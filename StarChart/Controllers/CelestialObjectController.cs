@@ -80,7 +80,7 @@ namespace StarChart.Controllers
 
             if (existingObject == null)
             {
-                NotFound();
+                return NotFound();
             }
 
             existingObject.Name = celestialObject.Name;
@@ -100,7 +100,7 @@ namespace StarChart.Controllers
 
             if (existingObject == null)
             {
-                NotFound();
+                return NotFound();
             }
 
             existingObject.Name = name;
